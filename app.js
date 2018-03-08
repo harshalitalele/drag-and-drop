@@ -1,0 +1,1 @@
+setDragDrop(elements, "elements-list", "main-canvas");
