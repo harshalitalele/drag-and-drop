@@ -8,6 +8,10 @@ var makeDraggable = function() {
      * Custom event handlers : https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
      */
     return function(dragid, dropid) {
-        
+        //Set dragid element draggable    
+        document.getElementById(dragid).setAttribute("draggable", true);
+        //Set conditions on droppable zone to accept only corresponding draggable elements
+        //Add all drag drop events and raise user-friendly event handlers
+        //
     };
 };
