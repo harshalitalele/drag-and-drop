@@ -4,9 +4,10 @@ var makeDraggable = (function() {
     /**
      * To Do:
      * 1. Copy paste on drag and drop or provide such option in settings
-     * 2. See how text/key can be shared with every object dragged
+     * 2. See how text/key can be shared with every object dragged and create content map of droppable zone
      * 3. Object mapping of dragged objects on dragged area as an example / use case
-     * 4. See if you want custom event handlers
+     * 4. See if you want custom event handlers (ondrop handler is necessary)
+     * 5. Handle all sorts of weird bugs
      */
     
     /**
@@ -46,7 +47,9 @@ var makeDraggable = (function() {
                 e.preventDefault();
                 // To Do:  Check if this is valid drop from _dropdragMap array for this dropid
                 var data = e.dataTransfer.getData("text");
-                e.target.appendChild(document.getElementById(data));
+                var draggedElem = document.getElementById(data);
+                var copyOfDraggedElem =  draggedElem.cloneNode(true);
+                e.target.appendChild(copyOfDraggedElem);
                 console.log("Check: " + JSON.stringify(_dropdragMap));
             });
         }
