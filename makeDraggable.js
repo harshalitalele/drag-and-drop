@@ -1,6 +1,11 @@
 var makeDraggable = (function() {
     var _dropdragMap = {};
     
+    function _validateDragDrop(dragid, dropid) {
+        //To Do: loop over _dropdragMap and validate
+        return true;
+    }
+    
     /**
      * To Do:
      * 1. Copy paste on drag and drop or provide such option in settings
@@ -8,6 +13,7 @@ var makeDraggable = (function() {
      * 3. Object mapping of dragged objects on dragged area as an example / use case
      * 4. See if you want custom event handlers (ondrop handler is necessary)
      * 5. Handle all sorts of weird bugs
+     * 6. Write another object/class inside which have methods to get object of every dropzone created with keymapped in it
      */
     
     /**
@@ -46,6 +52,7 @@ var makeDraggable = (function() {
             droppableRegion.addEventListener("drop", function(e) {
                 e.preventDefault();
                 // To Do:  Check if this is valid drop from _dropdragMap array for this dropid
+                // _validateDragDrop(dragid, dropid)
                 var data = e.dataTransfer.getData("text");
                 var draggedElem = document.getElementById(data);
                 var copyOfDraggedElem =  draggedElem.cloneNode(true);
