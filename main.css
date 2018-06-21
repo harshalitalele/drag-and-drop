@@ -2,19 +2,19 @@
     width: 100%;
     height: 100vh;
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: black;
 }
 .elements-list {
     position: relative;
     float: left;
     width: 20%;
     height: 100vh;
-    background-color: azure;
+    background-color: darkgrey;
 }
 .main-canvas {
     position: relative;
     float: left;
     width: 80%;
     height: 100vh;
-    background-color: palegreen;
+    background-color: gray;
 }

@@ -4,15 +4,27 @@
         <link rel="stylesheet" href="main.css"/>
     </head>
     <body>
-        <div class="central-pane">
+        <!--<div class="central-pane">
             <div class="elements-list" id="elements-list">
                 
             </div>
             <div class="main-canvas" id="main-canvas">
                 
             </div>
+        </div>-->
+        <div class="central-pane">
+            <div class="elements-list" id="elements-list">
+                draggable element
+                <button id="btn1">btn 1</button>
+                <button id="btn2">btn 2</button>
+                <input type="text" id="input1"/>
+            </div>
+            <div class="main-canvas" id="main-canvas">
+                droppable area
+            </div>
         </div>
         <div id="libraries">
+            <script src="makeDraggable.js"></script>
             <script src="drag-n-drop.js"></script>
             <script src="elements.js"></script>
             <script src="app.js"></script>
