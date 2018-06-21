@@ -12,8 +12,11 @@ var makeDraggable = (function() {
      * 2. See how text/key can be shared with every object dragged and create content map of droppable zone
      * 3. Object mapping of dragged objects on dragged area as an example / use case
      * 4. See if you want custom event handlers (ondrop handler is necessary)
-     * 5. Handle all sorts of weird bugs
+     * 5. Handle all sorts of weird bugs (like calling makeDraggable on same pair of elements)
      * 6. Write another object/class inside which have methods to get object of every dropzone created with keymapped in it
+     * 7. Copy action should be binding to the draggable element, whether you want that element to get copy pasted or cut pasted
+     * 8. Add gulp build tasks
+     * 9. Create different components like different maps in different files in different files if required
      */
     
     /**
