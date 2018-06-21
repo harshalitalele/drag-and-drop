@@ -2,12 +2,16 @@ var makeDraggable = (function() {
     var _dropdragMap = {};
     
     /**
+     * To Do:
+     * 1. Copy paste on drag and drop or provide such option in settings
+     * 2. See how text/key can be shared with every object dragged
+     * 3. Object mapping of dragged objects on dragged area as an example / use case
+     * 4. See if you want custom event handlers
+     */
+    
+    /**
      * @param draggable element id, droppable area id
      * This method sets elements draggable and sets droppable area
-     * Add a copy option instead of cut pasting elements
-     * Handle this : multiple drop handlers in this case
-     * Text to share with every object dragged
-     * object mapping of dragged objects on dragged area
      * Reference : https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
      * and raises eventHandlers for ondrag, ondragover, ondrop, etc
      * Custom event handlers : https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events
